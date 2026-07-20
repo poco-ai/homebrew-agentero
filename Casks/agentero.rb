@@ -6,7 +6,7 @@ cask "agentero" do
   # from this tap until the first release has updated them.
 
   on_arm do
-    sha256 "PLACEHOLDER_SHA256_AARCH64_DMG"
+    sha256 "105acdc8e706a3271ed2bf4f524fe85d99063ab08586032484608bd8283f8dad"
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/Agentero_#{version}_aarch64.dmg"
   end
   on_intel do
