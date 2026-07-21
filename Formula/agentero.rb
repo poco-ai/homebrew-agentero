@@ -1,7 +1,7 @@
 class Agentero < Formula
   desc "Headless Agentero CLI for Vault / Catalog"
   homepage "https://github.com/poco-ai/Agentero"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   # NOTE: The sha256 values below are placeholders. They are overwritten
@@ -19,7 +19,7 @@ class Agentero < Formula
     sha256 "0884949033bea39944909717bc4760dd46013c0d36fa3aede34a13ffd057416e"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "PLACEHOLDER_SHA256_AARCH64_UNKNOWN_LINUX_GNU"
+    sha256 "c716735ac001547e6b0173267924b4ac80a9306c5e71cecb20f777141600390b"
   else
     odie "Agentero CLI is not supported on this platform via Homebrew."
   end
