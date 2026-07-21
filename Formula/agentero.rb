@@ -17,6 +17,9 @@ class Agentero < Formula
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-#{version}-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "0884949033bea39944909717bc4760dd46013c0d36fa3aede34a13ffd057416e"
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-#{version}-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "PLACEHOLDER_SHA256_AARCH64_UNKNOWN_LINUX_GNU"
   else
     odie "Agentero CLI is not supported on this platform via Homebrew."
   end
