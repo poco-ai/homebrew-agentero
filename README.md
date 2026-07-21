@@ -18,6 +18,15 @@ brew install agentero          # CLI
 brew install --cask agentero   # Desktop app
 ```
 
+如果之前安装过
+
+```bash
+brew update
+brew untap poco-ai/agentero
+brew tap poco-ai/agentero
+brew install agentero
+```
+
 ## Maintenance
 
 This tap is updated automatically by the main repository's release workflow.
