@@ -1,7 +1,7 @@
 class Agentero < Formula
   desc "Headless Agentero CLI for Vault / Catalog"
   homepage "https://github.com/poco-ai/Agentero"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   # NOTE: The sha256 values below are placeholders. They are overwritten
