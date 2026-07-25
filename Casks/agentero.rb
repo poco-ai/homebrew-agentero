@@ -1,5 +1,5 @@
 cask "agentero" do
-  version "0.1.3"
+  version "0.1.4"
 
   # NOTE: The sha256 values below are placeholders. They are overwritten
   # automatically by the release workflow in poco-ai/Agentero. Do not install
