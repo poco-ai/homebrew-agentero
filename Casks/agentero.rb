@@ -1,21 +1,21 @@
 cask "agentero" do
-  version "0.7.2"
+  version "0.8.0"
 
   on_macos do
     on_arm do
-      sha256 "f52b68ca54583ac2b46fbff6769674ac24c88a4b573f77d577f28678554f37c4"
+      sha256 "e8cda05989d749eca414c91c11bc0fdf43802562ff7631a34754b95e70d26e65"
       url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/Agentero_#{version}_aarch64.dmg"
     end
   end
 
   on_linux do
     on_arm do
-      sha256 "43a6c971ed5863b1fccaffb8b8bf82042ee2781738a61aed3db97b82ed34b1cc"
+      sha256 "6db82bcaf4f1d35c76555f74cb46f185c4abfeadfaa009fd14a60c3aa9f77845"
       url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/Agentero_#{version}_aarch64.AppImage"
       binary "Agentero_#{version}_aarch64.AppImage", target: "agentero"
     end
     on_intel do
-      sha256 "a24579b377bd3c090705a6a00e705ff1c6244cc6a4c80f1c0ea2804b4ee3979a"
+      sha256 "d8ee8792cbff765ac87ab17ea3d19c3854fd42a7e9c00560dfbc3f8dcb97ff5a"
       url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/Agentero_#{version}_amd64.AppImage"
       binary "Agentero_#{version}_amd64.AppImage", target: "agentero"
     end
