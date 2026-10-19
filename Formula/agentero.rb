@@ -1,18 +1,18 @@
 class Agentero < Formula
   desc "Headless Agentero CLI for Vault / Catalog"
   homepage "https://github.com/poco-ai/Agentero"
-  version "0.11.9"
+  version "0.12.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-cli-#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "90d2aea8cbdd11a7dc9839d9f2bb9901f3ef7e672768cd02b2b7852ac24d54b9"
+    sha256 "01227523182f2adb1ace058b7c3b21cada10241bef8774fcc7a5ba024b36fd5f"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-cli-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "f0a448aeee7d2de74f289a4d9d9bf8539d96b106e9cb09f10e518e7d32666dc0"
+    sha256 "c960b5dce1030bcd89b75a24ef51643666f914189cba1aa0fdebba163a4243ed"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/poco-ai/Agentero/releases/download/v#{version}/agentero-cli-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "ac6e5fb25ad95d05b80036ff5834def5dcb3bdc113c9819ad23b0703f48b5185"
+    sha256 "b9c71ac1fe0112e759d7937d7d35f40de653c1f2d119944d55cb2047bbe10b83"
   else
     odie "Agentero CLI is not supported on this platform via Homebrew."
   end
